@@ -15,6 +15,7 @@
 build-mac/.DS_Store
 build-mac/.idea/
 build-mac/libetpan.xcodeproj/xcuserdata/
+build-mac/libetpan.xcodeproj/project.xcworkspace/
 
 /Makefile
 /Makefile.in

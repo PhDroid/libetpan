@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B756569D153C864F0081481C /* exits.h in Headers */ = {isa = PBXBuildFile; fileRef = B7565694153C864F0081481C /* exits.h */; };
+		B756569E153C864F0081481C /* gai.h in Headers */ = {isa = PBXBuildFile; fileRef = B7565695153C864F0081481C /* gai.h */; };
+		B756569F153C864F0081481C /* hmac-md5.h in Headers */ = {isa = PBXBuildFile; fileRef = B7565696153C864F0081481C /* hmac-md5.h */; };
+		B75656A0153C864F0081481C /* md5.h in Headers */ = {isa = PBXBuildFile; fileRef = B7565697153C864F0081481C /* md5.h */; };
+		B75656A1153C864F0081481C /* md5global.h in Headers */ = {isa = PBXBuildFile; fileRef = B7565698153C864F0081481C /* md5global.h */; };
+		B75656A2153C864F0081481C /* prop.h in Headers */ = {isa = PBXBuildFile; fileRef = B7565699153C864F0081481C /* prop.h */; };
+		B75656A3153C864F0081481C /* sasl.h in Headers */ = {isa = PBXBuildFile; fileRef = B756569A153C864F0081481C /* sasl.h */; };
+		B75656A4153C864F0081481C /* saslplug.h in Headers */ = {isa = PBXBuildFile; fileRef = B756569B153C864F0081481C /* saslplug.h */; };
+		B75656A5153C864F0081481C /* saslutil.h in Headers */ = {isa = PBXBuildFile; fileRef = B756569C153C864F0081481C /* saslutil.h */; };
 		C6451AFE1083D316003135FD /* mailimf_write.h in Headers */ = {isa = PBXBuildFile; fileRef = C6F9EA32105335BC0059C3BA /* mailimf_write.h */; };
 		C6451AFF1083D316003135FD /* mhdriver_cached.h in Headers */ = {isa = PBXBuildFile; fileRef = C6F9E913105335BC0059C3BA /* mhdriver_cached.h */; };
 		C6451B001083D316003135FD /* mhdriver_types.h in Headers */ = {isa = PBXBuildFile; fileRef = C6F9E91A105335BC0059C3BA /* mhdriver_types.h */; };
@@ -675,14 +684,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		C6F9EDBE105339EA0059C3BD = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C6F9EDBE105339EA0059C3BB /* Cyrus SASL.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = FFE41115A40680FF9726089A;
-			remoteInfo = "Makefile-cyrus-sasl";
-		};
-		C6F9EDBE105339EA0059C3BE = {
+		C6F9EDBE105339EA0059C3BE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = C6F9EDBE105339EA0059C3BB /* Cyrus SASL.xcodeproj */;
 			proxyType = 2;
@@ -707,6 +709,15 @@
 /* Begin PBXFileReference section */
 		8DC2EF5A0486A6940098B216 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8DC2EF5B0486A6940098B216 /* libetpan.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = libetpan.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7565694153C864F0081481C /* exits.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = exits.h; path = "../iOSPorts/ports/security/cyrus-sasl/cyrus-sasl-2.1.23/include/exits.h"; sourceTree = "<group>"; };
+		B7565695153C864F0081481C /* gai.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = gai.h; path = "../iOSPorts/ports/security/cyrus-sasl/cyrus-sasl-2.1.23/include/gai.h"; sourceTree = "<group>"; };
+		B7565696153C864F0081481C /* hmac-md5.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "hmac-md5.h"; path = "../iOSPorts/ports/security/cyrus-sasl/cyrus-sasl-2.1.23/include/hmac-md5.h"; sourceTree = "<group>"; };
+		B7565697153C864F0081481C /* md5.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = md5.h; path = "../iOSPorts/ports/security/cyrus-sasl/cyrus-sasl-2.1.23/include/md5.h"; sourceTree = "<group>"; };
+		B7565698153C864F0081481C /* md5global.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = md5global.h; path = "../iOSPorts/ports/security/cyrus-sasl/cyrus-sasl-2.1.23/include/md5global.h"; sourceTree = "<group>"; };
+		B7565699153C864F0081481C /* prop.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = prop.h; path = "../iOSPorts/ports/security/cyrus-sasl/cyrus-sasl-2.1.23/include/prop.h"; sourceTree = "<group>"; };
+		B756569A153C864F0081481C /* sasl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = sasl.h; path = "../iOSPorts/ports/security/cyrus-sasl/cyrus-sasl-2.1.23/include/sasl.h"; sourceTree = "<group>"; };
+		B756569B153C864F0081481C /* saslplug.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = saslplug.h; path = "../iOSPorts/ports/security/cyrus-sasl/cyrus-sasl-2.1.23/include/saslplug.h"; sourceTree = "<group>"; };
+		B756569C153C864F0081481C /* saslutil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = saslutil.h; path = "../iOSPorts/ports/security/cyrus-sasl/cyrus-sasl-2.1.23/include/saslutil.h"; sourceTree = "<group>"; };
 		C6516B69130DD667004ADD56 /* namespace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = namespace.h; sourceTree = "<group>"; };
 		C65179E4130E84BD004ADD56 /* namespace.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = namespace.c; sourceTree = "<group>"; };
 		C65179F0130E85CA004ADD56 /* namespace_parser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = namespace_parser.h; sourceTree = "<group>"; };
@@ -1254,6 +1265,15 @@
 		0867D691FE84028FC02AAC07 /* libetpan */ = {
 			isa = PBXGroup;
 			children = (
+				B7565694153C864F0081481C /* exits.h */,
+				B7565695153C864F0081481C /* gai.h */,
+				B7565696153C864F0081481C /* hmac-md5.h */,
+				B7565697153C864F0081481C /* md5.h */,
+				B7565698153C864F0081481C /* md5global.h */,
+				B7565699153C864F0081481C /* prop.h */,
+				B756569A153C864F0081481C /* sasl.h */,
+				B756569B153C864F0081481C /* saslplug.h */,
+				B756569C153C864F0081481C /* saslutil.h */,
 				C6F9EDBE105339EA0059C3BB /* Cyrus SASL.xcodeproj */,
 				08FB77AEFE84172EC02AAC07 /* libetpan */,
 				32C88DFF0371C24200C91783 /* Other Sources */,
@@ -2216,6 +2236,15 @@
 				C6DC67A21083CDA000FA050B /* pop3storage.h in Headers */,
 				C6DC67A31083CDA000FA050B /* uidplus.h in Headers */,
 				C6DC67A41083CDA000FA050B /* uidplus_types.h in Headers */,
+				B756569D153C864F0081481C /* exits.h in Headers */,
+				B756569E153C864F0081481C /* gai.h in Headers */,
+				B756569F153C864F0081481C /* hmac-md5.h in Headers */,
+				B75656A0153C864F0081481C /* md5.h in Headers */,
+				B75656A1153C864F0081481C /* md5global.h in Headers */,
+				B75656A2153C864F0081481C /* prop.h in Headers */,
+				B75656A3153C864F0081481C /* sasl.h in Headers */,
+				B75656A4153C864F0081481C /* saslplug.h in Headers */,
+				B75656A5153C864F0081481C /* saslutil.h in Headers */,
 				C6451AFE1083D316003135FD /* mailimf_write.h in Headers */,
 				C6451AFF1083D316003135FD /* mhdriver_cached.h in Headers */,
 				C6451B001083D316003135FD /* mhdriver_types.h in Headers */,
@@ -2493,7 +2522,7 @@
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = libsasl2.a;
-			remoteRef = C6F9EDBE105339EA0059C3BE;
+			remoteRef = C6F9EDBE105339EA0059C3BE /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
