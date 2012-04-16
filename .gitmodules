@@ -1,0 +1,3 @@
+[submodule "iOSPorts"]
+	path = iOSPorts
+	url = git@github.com:PhDroid/iOSPorts.git
