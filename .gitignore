@@ -6,7 +6,6 @@
 .libs
 
 /build-mac/build
-/build-mac/include
 /config.guess
 /config.h.in
 /config.sub
