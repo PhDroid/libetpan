@@ -11,6 +11,11 @@
 /config.sub
 /ltmain.sh
 
+.DS_Store
+build-mac/.DS_Store
+build-mac/.idea/
+build-mac/libetpan.xcodeproj/xcuserdata/
+
 /Makefile
 /Makefile.in
 /autom4te.cache/
