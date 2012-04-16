@@ -674,6 +674,23 @@
 		C6F9EDBE105339EA0059C3BA /* libcrypto.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C6F9EDBD105339EA0059C3BA /* libcrypto.dylib */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		C6F9EDBE105339EA0059C3BD = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C6F9EDBE105339EA0059C3BB /* Cyrus SASL.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = FFE41115A40680FF9726089A;
+			remoteInfo = "Makefile-cyrus-sasl";
+		};
+		C6F9EDBE105339EA0059C3BE = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C6F9EDBE105339EA0059C3BB /* Cyrus SASL.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D7E70E35ED8E80700039F08D;
+			remoteInfo = sasl2;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXCopyFilesBuildPhase section */
 		C6DC649E10829CEB00FA050B /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -1196,6 +1213,7 @@
 		C6F9EDAC1053395A0059C3BA /* libexpat.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libexpat.dylib; path = /usr/lib/libexpat.dylib; sourceTree = "<absolute>"; };
 		C6F9EDB1105339650059C3BA /* libcurl.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libcurl.dylib; path = /usr/lib/libcurl.dylib; sourceTree = "<absolute>"; };
 		C6F9EDBD105339EA0059C3BA /* libcrypto.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libcrypto.dylib; path = /usr/lib/libcrypto.dylib; sourceTree = "<absolute>"; };
+		C6F9EDBE105339EA0059C3BB /* Cyrus SASL.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "Cyrus SASL.xcodeproj"; path = "../iOSPorts/ports/security/cyrus-sasl/Cyrus SASL.xcodeproj"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1236,6 +1254,7 @@
 		0867D691FE84028FC02AAC07 /* libetpan */ = {
 			isa = PBXGroup;
 			children = (
+				C6F9EDBE105339EA0059C3BB /* Cyrus SASL.xcodeproj */,
 				08FB77AEFE84172EC02AAC07 /* libetpan */,
 				32C88DFF0371C24200C91783 /* Other Sources */,
 				089C1665FE841158C02AAC07 /* Resources */,
@@ -2044,6 +2063,14 @@
 			name = Libraries;
 			sourceTree = "<group>";
 		};
+		C6F9EDBE105339EA0059C3BC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C6F9EDBE105339EA0059C3BF /* libsasl2.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -2447,6 +2474,12 @@
 			mainGroup = 0867D691FE84028FC02AAC07 /* libetpan */;
 			productRefGroup = 034768DFFF38A50411DB9C8B /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = C6F9EDBE105339EA0059C3BC /* Products */;
+					ProjectRef = C6F9EDBE105339EA0059C3BB /* Cyrus SASL.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				8DC2EF4F0486A6940098B216 /* libetpan */,
@@ -2454,6 +2487,16 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		C6F9EDBE105339EA0059C3BF /* libsasl2.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libsasl2.a;
+			remoteRef = C6F9EDBE105339EA0059C3BE;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		8DC2EF520486A6940098B216 /* Resources */ = {
@@ -2818,6 +2861,7 @@
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(HOME)/Library/Frameworks";
 				PRODUCT_NAME = libetpan;
+				USER_HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/../iOSPorts/ports/security/cyrus-sasl/**";
 				WRAPPER_EXTENSION = framework;
 			};
 			name = Debug;
@@ -2834,6 +2878,7 @@
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(HOME)/Library/Frameworks";
 				PRODUCT_NAME = libetpan;
+				USER_HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/../iOSPorts/ports/security/cyrus-sasl/**";
 				WRAPPER_EXTENSION = framework;
 			};
 			name = Release;
